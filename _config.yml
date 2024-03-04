@@ -2,8 +2,8 @@ title: Let 'em Cook
 description: The frontend for Let 'em Cook
 owner_name: Trevor Huang
 github_username: trevorhuang1
-github_repo: "lmc-frontend"
-baseurl: "/lmc-frontend"
+github_repo: "cpt-frontend"
+baseurl: "/cpt-frontend"
 remote_theme: jekyll/minima
 minima:
   social_links:

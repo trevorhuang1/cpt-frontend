@@ -13,7 +13,7 @@ permalink: /data/database
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leaderboard</title>
-<link rel="stylesheet" href="/lmc-frontend/LMC/JS/SCSS/leaderboard.css"> <!-- Link to the external CSS file -->
+<link rel="stylesheet" href="/cpt-frontend/LMC/JS/SCSS/leaderboard.css"> <!-- Link to the external CSS file -->
 {% include navbar.html %}
 </head>
 <body>
@@ -60,7 +60,7 @@ permalink: /data/database
     if (response.status !== 200) {
         if (response.status === 401) {
             // Unauthorized - Redirect to 401 error page
-            window.location.href = "/lmc-frontend/lmc-login";
+            window.location.href = "/cpt-frontend/lmc-login";
         } else if (response.status === 403) {
             // Forbidden - Redirect to 403 error page
             alert(response.status + " error. Redirecting you to the login")
@@ -71,7 +71,7 @@ permalink: /data/database
             td.innerHTML = errorMsg;
             tr.appendChild(td);
             resultContainer.appendChild(tr);
-            window.location.href = "/lmc-frontend/lmc-login";
+            window.location.href = "/cpt-frontend/lmc-login";
             return;
         }
     }
