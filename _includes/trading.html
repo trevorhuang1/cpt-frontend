@@ -208,7 +208,6 @@
           }
           // valid response will contain JSON data
           response.json().then(data => {
-              console.log(data);
               for (let i = 0; i < data.length; i++) {
                   var user = data[i];
                   users.push(user.uid);
@@ -237,6 +236,7 @@
               console.log("users", users);
               console.log("items", trade);
               console.log("frs", friendRequests)
+              return data;
           });
       })
       // catch fetch errors (ie ACCESS to server blocked)
